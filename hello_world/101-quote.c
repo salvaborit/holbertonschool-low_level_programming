@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-* prints to stderr
+*
 */
 
 int main(void)
