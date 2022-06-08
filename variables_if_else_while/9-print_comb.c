@@ -14,10 +14,11 @@ int main(void)
 		{
 			putchar(i);
 			putchar(44);
+			putchar(127);
 		}
 		else
 			putchar(i);
-		 putchar(127);
+		 write("\n");
 	}
 	return (0);
 }
