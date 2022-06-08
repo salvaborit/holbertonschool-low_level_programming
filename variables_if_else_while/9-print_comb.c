@@ -12,9 +12,8 @@ int main(void)
 	{
 		putchar(i);
 		putchar(44);
-		if (i != 9)
+		if (i < '9')
 			putchar(127);
 	}
-	putchar('\n');
 	return (0);
 }
