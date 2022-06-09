@@ -22,6 +22,7 @@ void times_table(void)
 			if (dig1 == 0)
 			{
 			_putchar(32);
+			_putchar(32);
 			_putchar(dig2 + '0');
 				if (mult < 9)
 					_putchar(44);
@@ -30,6 +31,7 @@ void times_table(void)
 			}
 			else
 			{
+			_putchar(32);
 			_putchar(dig1 + '0');
 			_putchar(dig2 + '0');
 				if (mult < 9)
