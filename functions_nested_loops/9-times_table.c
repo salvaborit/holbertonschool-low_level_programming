@@ -16,22 +16,23 @@ void times_table(void)
 	{
 		for (mult = 0; mult <= 9; mult++)
 		{
-		res = num * mult;
-		dig1 = res / 10;
-		dig2 = res % 10;	
-		if (dig1 == 0)
-		{
-		_putchar(32);
-		_putchar(dig2 + '0');
-		_putchar(44);
-		_putchar(32);
-		}
-		else
-		{
-		_putchar(dig1 + '0');
-		_putchar(dig2 + '0');
-		_putchar(44);
-		_putchar(32);
+			res = num * mult;
+			dig1 = res / 10;
+			dig2 = res % 10;	
+			if (dig1 == 0)
+			{
+			_putchar(32);
+			_putchar(dig2 + '0');
+			_putchar(44);
+			_putchar(32);
+			}
+			else
+			{
+			_putchar(dig1 + '0');
+			_putchar(dig2 + '0');
+			_putchar(44);
+			_putchar(32);
+			}
 		}
 	_putchar('\n');
 	}
