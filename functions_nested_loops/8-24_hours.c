@@ -1,12 +1,15 @@
 #include "main.h"
 /**
 * jack_bauer - prints every minute of the day
-*
-* Return: Always 0 (Success)
+* @h: var that stores value for hours
+* @m: var that stores value for minutes
+* Return: void
 */
 void jack_bauer(void)
 {
+	int h;
 	int m;
+
 	for (h = 0; h < 24; h++)
 	{
 		_putchar((h / 10) + '0');
