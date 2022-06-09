@@ -1,6 +1,7 @@
 #include "main.h"
 /**
 * print_last_digit - prints the last digit of a number
+* @i: var that stores value to check
 * Return: value of var lastDigit
 */
 int print_last_digit(int i)
