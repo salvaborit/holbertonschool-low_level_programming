@@ -3,9 +3,10 @@
 /**
 * _abs - computes absolute value of an integer
 */
-int _abs(int)
+int _abs(int i)
 {
-	int i;
-
-	printf("%d\n", abs(i));
+	if (i < 0)
+		return (i * -1);
+	else
+		return (i);
 }
