@@ -21,13 +21,23 @@ void times_table(void)
 			dig2 = res % 10;	
 			if (dig1 == 0)
 			{
-			_putchar(32);
-			_putchar(32);
-			_putchar(dig2 + '0');
-				if (mult < 9)
-					_putchar(44);
+				if (mult == 0)
+				{
+					_putchar(dig2 + '0');
+						if (mult < 9)
+							_putchar(44);
+						else
+							_putchar('\n');
+				}
 				else
-					_putchar('\n');
+				{
+					_putchar(32);
+					_putchar(32);
+					_putchar(dig2 + '0');
+						if (mult < 9)
+							_putchar(44);
+						else
+							_putchar('\n');
 			}
 			else
 			{
