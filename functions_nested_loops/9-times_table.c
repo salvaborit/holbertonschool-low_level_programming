@@ -36,6 +36,7 @@ void times_table(void)
 					_putchar(32);
 			}
 		}
-	_putchar('\n');
+		if (mult == 9)
+			_putchar('\n');
 	}
 }
