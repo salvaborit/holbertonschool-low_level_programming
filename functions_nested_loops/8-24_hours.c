@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
 * jack_bauer - prints every minute of the day
 *
@@ -6,7 +6,6 @@
 */
 int jack_bauer(void)
 {
-	int h;
 	int m;
 
 	for (m = 0; m <= 59; m++)
