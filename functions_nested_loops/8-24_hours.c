@@ -1,8 +1,7 @@
 #include "main.h"
 /**
 * jack_bauer - prints every minute of the day
-* @h: var that stores value for hours
-* @m: var that stores value for minutes
+*
 * Return: void
 */
 void jack_bauer(void)
