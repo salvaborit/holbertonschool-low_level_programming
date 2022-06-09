@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-* _isalpha - prints the last digit of a number
-* Return: Always 0 (Success)
+* print_last_digit - prints the last digit of a number
+* Return: value of var lastDigit
 */
 int print_last_digit(int i)
 {
