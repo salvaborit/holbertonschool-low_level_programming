@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
-* fizzbuzz - fizzbuzz
+* main - fizzbuzz
 */
-void fizzbuzz(void)
+void main(void)
 {
 	int i;
 
