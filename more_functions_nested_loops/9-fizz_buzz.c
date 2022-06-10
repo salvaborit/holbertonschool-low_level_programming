@@ -2,7 +2,7 @@
 /**
 * main - fizzbuzz
 */
-void main(void)
+int main(void)
 {
 	int i;
 
@@ -15,4 +15,5 @@ void main(void)
 		else if (i % 3 == 0 && i % 5 == 0)
 			printf("FizzBuzz");
 	}
+	return (0);
 }
