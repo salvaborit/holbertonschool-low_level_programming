@@ -6,7 +6,7 @@ int main(void)
 {
 	int i, fizz, buzz;
 
-	for (i = 0; i <=100; i++)
+	for (i = 0; i <= 100; i++)
 	{
 		fizz = i % 3;
 		buzz = i % 5;
@@ -17,7 +17,7 @@ int main(void)
 		else if (fizz == 0 && buzz == 0)
 			printf("FizzBuzz ");
 		else
-			printf("%d", i);
+			printf("%d ", i);
 	}
 	return (0);
 }
