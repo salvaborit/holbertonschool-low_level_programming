@@ -10,7 +10,7 @@ int main(void)
 	{
 		fizz = i % 3;
 		buzz = i % 5;
-		fizbuzz = i % 15;
+		fizzbuzz = i % 15;
 		if (fizzbuzz == 0)
 			printf("FizzBuzz ");
 		else if (buzz == 0)
