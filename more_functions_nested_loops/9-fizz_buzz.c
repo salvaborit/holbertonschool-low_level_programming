@@ -11,14 +11,16 @@ int main(void)
 		fizz = i % 3;
 		buzz = i % 5;
 		fizzbuzz = i % 15;
+		if (i == 0);
+			printf("%d", i);
 		if (fizzbuzz == 0 && i != 0)
-			printf("FizzBuzz ");
+			printf(" FizzBuzz");
 		else if (buzz == 0 && i != 0)
-			printf("Buzz ");
+			printf(" Buzz");
 		else if (fizz == 0 && i != 0)
-			printf("Fizz ");
+			printf(" Fizz");
 		else
-			printf("%d ", i);
+			printf(" %d", i);
 	}
 	return (0);
 }
