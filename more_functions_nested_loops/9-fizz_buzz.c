@@ -10,11 +10,11 @@ int main(void)
 	{
 		fizz = i % 3;
 		buzz = i % 5;
-		if (fizz == 3 && buzz == 5)
+		if (fizz == 0 && buzz == 0)
 			printf("FizzBuzz ");
-		else if (buzz == 5)
+		else if (buzz == 0)
 			printf("Buzz ");
-		else if (fizz == 3)
+		else if (fizz == 0)
 			printf("Fizz ");
 		else
 			printf("%d ", i);
