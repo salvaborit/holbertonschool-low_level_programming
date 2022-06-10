@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-* main - Entry point
+* _isupper - checks if stored value is an uppercase letter
 *
-* Return: Always 0 (Success)
+* Return: 1 if uppercase, 0 if otherwise
 */
 int _isupper(int c)
 {
