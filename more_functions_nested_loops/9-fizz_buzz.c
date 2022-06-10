@@ -4,15 +4,17 @@
 */
 int main(void)
 {
-	int i;
+	int i, fizz, buzz;
 
 	for (i = 0; i <=100; i++)
 	{
-		if (i % 3 == 0)
+		fizz = i % 3;
+		buzz = i % 5;
+		if (fizz == 0)
 			printf("Fizz ");
-		else if (i % 5 == 0)
+		else if (buzz == 0)
 			printf("Buzz ");
-		else if (i % 3 == 0 && i % 5 == 0)
+		else if (fizz == 0 && buzz == 0)
 			printf("FizzBuzz ");
 		else
 			printf("%d", i);
