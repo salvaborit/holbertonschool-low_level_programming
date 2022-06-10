@@ -13,9 +13,9 @@ int main(void)
 		fizzbuzz = i % 15;
 		if (fizzbuzz == 0 && i != 0)
 			printf("FizzBuzz ");
-		else if (buzz == 0)
+		else if (buzz == 0 && i != 0)
 			printf("Buzz ");
-		else if (fizz == 0)
+		else if (fizz == 0 && i != 9)
 			printf("Fizz ");
 		else
 			printf("%d ", i);
