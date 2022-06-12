@@ -12,7 +12,7 @@
 
 void print_remaining_days(int month, int day, int year)
 {
-	if (year = 2000 && month = 2 && day = 29)
+	if (year == 2000 && month == 2 && day == 29)
 	{
 		printf("Date: 02/29/2000");
 		printf("Day of the year: 60");
