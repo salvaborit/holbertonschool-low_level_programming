@@ -11,10 +11,10 @@ void print_triangle(int size)
 	hash = 1;
 	for (; size > 0; size--)
 	{
-		for (i = 0; i <= spaces; i++)
+		for (i = 0; i < spaces; i++)
 			_putchar(32);
 		spaces--;
-		for (j = 0; j <= hash; j++)
+		for (j = 0; j < hash; j++)
 			_putchar(35);
 		hash++;
 		_putchar('\n');
