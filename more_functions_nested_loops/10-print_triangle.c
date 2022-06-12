@@ -10,8 +10,10 @@ void print_triangle(int size)
 	spaces = size - 1;
 	hash = 1;
 	if (size <= 0)
+		{
 		_putchar('\n');
 		break;
+		}
 	for (; size > 0; size--)
 	{
 		for (i = 0; i < spaces; i++)
