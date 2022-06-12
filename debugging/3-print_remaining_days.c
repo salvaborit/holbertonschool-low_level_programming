@@ -12,15 +12,9 @@
 
 void print_remaining_days(int month, int day, int year)
 {
-	if (year == 2000 && month == 2 && day == 29)
+	if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
 	{
-		printf("Date: 02/29/2000");
-		printf("Day of the year: 60");
-		printf("Remaining days: 306");
-	}
-	else if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
-	{
-		if (month >= 2 && day >= 60)
+		if (+month >= 3 && day >= 60)
 			day++;
 		printf("Day of the year: %d\n", day);
 		printf("Remaining days: %d\n", 366 - day);
