@@ -5,7 +5,7 @@
 */
 void print_triangle(int size)
 {
-	int spaces, hash;
+	int spaces, hash, i, j;
 
 	spaces = size - 1;
 	hash = 1;	
