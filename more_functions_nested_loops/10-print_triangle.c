@@ -10,18 +10,18 @@ void print_triangle(int size)
 	spaces = size - 1;
 	hash = 1;
 	if (size <= 0)
-		{
 		_putchar('\n');
-		break;
-		}
-	for (; size > 0; size--)
+	else
 	{
-		for (i = 0; i < spaces; i++)
-			_putchar(32);
-		spaces--;
-		for (j = 0; j < hash; j++)
-			_putchar(35);
-		hash++;
-		_putchar('\n');
+		for (; size > 0; size--)
+		{
+			for (i = 0; i < spaces; i++)
+				_putchar(32);
+			spaces--;
+			for (j = 0; j < hash; j++)
+				_putchar(35);
+			hash++;
+			_putchar('\n');
+		}
 	}
 }
