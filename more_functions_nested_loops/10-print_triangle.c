@@ -8,8 +8,8 @@ void print_triangle(int size)
 	int spaces, hash, i, j;
 
 	spaces = size - 1;
-	hash = 1;	
-	for (; size >= 0; size--)
+	hash = 1;
+	for (; size > 0; size--)
 	{
 		for (i = 0; i <= spaces; i++)
 			_putchar(32);
