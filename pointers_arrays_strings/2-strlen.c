@@ -7,7 +7,7 @@
 */
 int _strlen(char *s)
 {
-	int i, spaces, length;
+	int i, spaces, length, res;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
@@ -16,5 +16,6 @@ int _strlen(char *s)
 		else
 			length++;
 	}
-	return (spaces + length);
+	res = spaces + length;
+	return (res);
 }
