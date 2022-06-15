@@ -1,15 +1,21 @@
 #include <stdio.h>
 #include "main.h"
 /**
-* strlen - returns length of string
+* _strlen - returns length of string
 * @s: stores string to be checked
 * Return: length of string
 */
 int _strlen(char *s)
 {
-	int i;
+	int i, spaces;
 
 	for (i = 0; s[i] != '\0'; i++)
-		i++;
+	{
+		if (s[i] = ' ')
+			spaces++;
+		else
+			i++;
+	}
+	i = i + spaces;
 	return (i);
 }
