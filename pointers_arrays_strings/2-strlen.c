@@ -11,7 +11,7 @@ int _strlen(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] == ' ')
+		if (s[i] == 32)
 			spaces++;
 		else
 			length++;
