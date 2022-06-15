@@ -6,10 +6,11 @@
 */
 void rev_string(char *s)
 {
-	int length, i; 
+	int length, i;
 	char *firstDig, *lastDig, temp;
 
-	for (length = 0; s[length] != '\0'; length++){}
+	for (length = 0; s[length] != '\0'; length++)
+	{}
 	firstDig = s;
 	lastDig = s;
 	for (i = 0; i < length - 1; i++)
