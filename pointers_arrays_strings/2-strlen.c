@@ -7,15 +7,8 @@
 */
 int _strlen(char *s)
 {
-	int i, spaces, length, res;
+	int i;
 
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		if (s[i] == 32)
-			spaces++;
-		else
-			length++;
-	}
-	res = spaces + length;
-	return (res);
+	for (i = 0; s[i] != '\0'; i++);
+	return (i);
 }
