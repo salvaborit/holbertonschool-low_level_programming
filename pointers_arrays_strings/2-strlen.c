@@ -9,7 +9,7 @@ int _strlen(char *s)
 {
 	int i, spaces, length;
 
-	for (i = 0; \s[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 		if (s[i] == ' ')
 			spaces++;
 		else
