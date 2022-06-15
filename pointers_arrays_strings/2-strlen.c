@@ -7,16 +7,12 @@
 */
 int _strlen(char *s)
 {
-	int i, spaces;
+	int i, spaces, length;
 
-	i = 0;
-	while (s[i] != '\0')
-	{
+	for (i = 0; (s[i] != '\0'; i++)
 		if (s[i] == ' ')
 			spaces++;
 		else
-			i++;
-	}
-	i = i + spaces;
-	return (i);
+			length++;
+	return (spaces + length);
 }
