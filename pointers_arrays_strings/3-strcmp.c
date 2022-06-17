@@ -1,10 +1,21 @@
 #include <stdio.h>
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
+* _strcmp - compares 2 strings
+* @s1: string 1
+* @s2: string 2
+* Return: 0 if same, positive if s1 > s2, negative if s1 < s2.
 */
-int main(void)
+int _strcmp(char *s1, char *s2)
 {
-	return (0);
+	int i;
+
+	i = 0;
+	while (s1[i] == s2[i])
+		i++;
+	if (s1[i] == s2[i])
+		return (0);
+	else if (s1[i] > s2[i])
+		return (s1[i] - s2[i]);
+	else
+		return (s2[i] - s1[i]);
 }
