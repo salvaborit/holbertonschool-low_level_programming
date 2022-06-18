@@ -12,11 +12,8 @@ char *rot13(char *c)
 	char *rot = "NnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMm";
 
 	for (i = 0; c[i]; i++)
-	{
-		j = 0;
-		for (; abc[j]; j++)
+		for (j = 0; abc[j]; j++)
 			if (c[i] == abc[j])
 				c[i] = rot[j];
-	}
 	return (c);
 }
