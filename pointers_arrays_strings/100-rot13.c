@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
 * rot13 - encodes a string using rot13
-* @c - string to be encoded
+* @c: - string to be encoded
 * Return: encoded string
 */
 char *rot13(char *c)
@@ -12,8 +12,11 @@ char *rot13(char *c)
 	char *rot = "NnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMm";
 
 	for (i = 0; c[i]; i++)
-		for (j = 0; abc[j]; j++)
+	{
+		j = 0;
+		for (; abc[j]; j++)
 			if (c[i] == abc[j])
 				c[i] = rot[j];
+	}
 	return (c);
 }
