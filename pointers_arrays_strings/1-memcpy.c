@@ -1,10 +1,17 @@
+#include "main.h"
 #include <stdio.h>
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
+* _memcpy - copies memory area to another memory area
+* @dest: destination area
+* @src: source area
+* @n: bytes of memory to be copied
+* Return: pointer to dest
 */
-int main(void)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	return (0);
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
+		dest[i] = src[i];
+	return (dest);
 }
