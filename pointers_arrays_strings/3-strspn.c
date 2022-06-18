@@ -1,10 +1,19 @@
+#include "main.h"
 #include <stdio.h>
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
+* _strspn - gets length of initial substring of s that has == bytes in accept
+* @s: string to be checked
+* @accept: characters to be compared to
+* Return: length of initial segment which consist only of bytes from accept
 */
-int main(void)
+unsigned int _strspn(char *s, char *accept)
 {
-	return (0);
+	int i, j;
+	unsigned int ret;
+
+	for (i = 0; s[i]; i++)
+		for (j = 0; accept[j]; j++)
+			if (s[i] == accept[j])
+				ret++;
+	return (ret);
 }
