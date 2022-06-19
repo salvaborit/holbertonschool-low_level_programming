@@ -1,10 +1,19 @@
+#include "main.h"
 #include <stdio.h>
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
+* print_chessboard - prints a chessboard
+* @a: array to print out on the chessboard
 */
-int main(void)
+void print_chessboard(char (*a)[8])
 {
-	return (0);
+	int row, col;
+
+	for (row = 0; row < 8; row++)
+	{
+		for (col = 0; col < 8; col++)
+		{
+			printf("%c", a[row][col]);
+		}
+		printf("\n");
+	}
 }
