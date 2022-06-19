@@ -7,15 +7,15 @@
 */
 void print_diagsums(int *a, int size)
 {
-	int i, j, front, back;
+	int i, front, back;
 
 	/* stores front diag values in sum1 array */
-	for (i = 0, j = 0; a[i]; i = i + size + 1, j++)
+	for (i = 0 ; a[i]; i = i + (size + 1))
 	{
 		front += a[i];
 	}
 	/* stores back diag values in sum2 array */
-	for (i = 0, j = 0; a[i]; i = i + size + 1, j++)
+	for (i = 0; a[i]; i = i + (size - 1))
 	{
 		back += a[i];
 	}
