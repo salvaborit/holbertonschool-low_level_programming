@@ -1,10 +1,23 @@
+#include "main.h"
 #include <stdio.h>
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
+* print_diagsums - prints the sum of the diagonals of a square matrix of ints
+* @a: matrix to be checked
+* @size: size of matrix
 */
-int main(void)
+void print_diagsums(int *a, int size)
 {
-	return (0);
+	int i, j, front, back;
+
+	/* stores front diag values in sum1 array */
+	for (i = 0, j = 0; a[i]; i = i + size + 1, j++)
+	{
+		front += a[i];
+	}
+	/* stores back diag values in sum2 array */
+	for (i = 0, j = 0; a[i]; i = i + size + 1, j++)
+	{
+		back += a[i];
+	}
+	printf("%d, %d", front, back);
 }
