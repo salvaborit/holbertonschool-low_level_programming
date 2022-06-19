@@ -11,11 +11,12 @@ char *_strchr(char *s, char c)
 	int i;
 	char *firstOcc;
 
-	for (i = 0; !(s[i] == '\0'); i++)
+	for (i = 0; s[i]; i++)
+	{
 		if (s[i] == c)
-		{
-			firstOcc = &s[i];
-			return (firstOcc);
-		}
-	return (0);
+			return (&s[i]);
+	}
+	if (c == '\0' && s[i] == '\0')
+		return (&s[i]);
+	return ('\0');
 }
