@@ -5,7 +5,7 @@
 * bytes in the string accept
 * @s: string to be checked
 * @accept: string to be compared to
-* Return: pointer to the byte in s that matches byte in accept, or 
+* Return: pointer to the byte in s that matches byte in accept, or
 * NULL if no such byte is found
 */
 char *_strpbrk(char *s, char *accept)
