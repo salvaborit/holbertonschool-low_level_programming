@@ -30,7 +30,7 @@ char *_strstr(char *haystack, char *needle)
 				l++;
 			}
 			if (eqChars == j)
-				return (&haystack[i]);		
+			i	return (&haystack[i]);
 		}
 	}
 	return (NULL);
