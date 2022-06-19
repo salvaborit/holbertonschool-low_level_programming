@@ -9,15 +9,13 @@ void print_diagsums(int *a, int size)
 {
 	int i, front, back;
 
-	/* stores front diag values in sum1 array */
+	front = 0;
+	back = 0;
+	/* stores front diag values sum in front var */
 	for (i = 0 ; a[i]; i = i + (size + 1))
-	{
-		front += a[i];
-	}
-	/* stores back diag values in sum2 array */
-	for (i = 0; a[i]; i = i + (size - 1))
-	{
-		back += a[i];
-	}
+		front = front + a[i];
+	/* stores back diag values sum in back var */
+	for (i = size - 1; a[i]; i = i + (size - 1))
+		back = back + a[i];
 	printf("%d, %d", front, back);
 }
