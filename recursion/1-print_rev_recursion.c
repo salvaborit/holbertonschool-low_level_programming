@@ -1,10 +1,12 @@
-#include <stdio.h>
+#include "main.h"
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
+* _print_rev_recursion - prints a string in reverse + \n
+* @s: string to be reversed
 */
-int main(void)
+void _print_rev_recursion(char *s)
 {
-	return (0);
+	if (*s == '\0')
+		return;
+	_print_rev_recursion(s + 1);
+	_putchar(*s);
 }
