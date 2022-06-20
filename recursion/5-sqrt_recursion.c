@@ -9,9 +9,9 @@ int _sqrt_recursion(int n)
 	return (sqroot(n, 1));
 }
 /**
-*
-*
-*
+* sqroot - sub function that loops natural num tester starting at i = 1
+* @n: number to calculate sq root of
+* @i: number to square to test for only naturals (i + 1 every loop)
 */
 int sqroot(int n, int i)
 {
