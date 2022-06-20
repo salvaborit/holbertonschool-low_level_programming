@@ -19,10 +19,10 @@ void print_diagsums(int *a, int size)
 	}
 	i = size - 1;
 	backSum = 0;
-	while (i < size * size)
+	while (i < (size * size) - 1)
 	{
 		backSum = backSum + a[i];
 		i = i + (size - 1);
 	}
-	printf("%d, %d", frontSum, backSum);
+	printf("%d, %d\n", frontSum, backSum);
 }
