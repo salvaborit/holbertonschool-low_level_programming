@@ -1,10 +1,14 @@
-#include <stdio.h>
+#include "main.h"
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
+* factorial - returns factorial of an int
+* @n: number to do factorial on
+* Return: factorial of n
 */
-int main(void)
+int factorial(int n)
 {
-	return (0);
+	if (n < 0)
+		return (-1);
+	if (n <= 1)
+		return(1);
+	return (n * factorial(n - 1));
 }
