@@ -1,10 +1,28 @@
-#include <stdio.h>
+#include "main.h"
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
+* _sqrt_recursion - returns the natural square root of a number
+* @n: integer
+* Return: square root of n
 */
-int main(void)
+int _sqrt_recursion(int n)
 {
-	return (0);
+	return (sqroot(n, 1));
+}
+/**
+*
+*
+*
+*/
+int sqroot(int n, int i)
+{
+	if (i <= n)
+	{
+		if (i * i == n)
+			return (i);
+		else
+			sqroot(n, i + 1);
+	}
+	else
+		return (-1);
+	return(0);
 }
