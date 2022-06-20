@@ -12,6 +12,7 @@ int _sqrt_recursion(int n)
 * sqroot - sub function that loops natural num tester starting at i = 1
 * @n: number to calculate sq root of
 * @i: number to square to test for only naturals (i + 1 every loop)
+* Return: sq root of n
 */
 int sqroot(int n, int i)
 {
@@ -24,5 +25,5 @@ int sqroot(int n, int i)
 	}
 	else
 		return (-1);
-	return(0);
+	return (0);
 }
