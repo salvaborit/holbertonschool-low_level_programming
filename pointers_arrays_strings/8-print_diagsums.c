@@ -7,15 +7,24 @@
 */
 void print_diagsums(int *a, int size)
 {
-	int i, front, back;
+	int i, j, frontSum, backSum;
 
-	front = 0;
-	back = 0;
-	/* stores front diag values sum in front var */
-	for (i = 0 ; a[i]; i = i + (size + 1))
-		front = front + a[i];
-	/* stores back diag values sum in back var */
-	for (i = size - 1; a[i]; i = i + (size - 1))
-		back = back + a[i];
-	printf("%d, %d", front, back);
+	/* front diag */
+	i = 0;
+	j = 0;
+	while (i < size)
+	{
+		frontSum = frontSum + a[j];
+		i++;
+		j = j + (size + 1);
+	}
+	i = 0;
+	j = 0;
+	while (i < size)
+	{
+		backSum = backSum + a[j];
+		i++;
+		j = j + (size - 1);
+	}
+	printf("%d, %d", frontSum, backSum);
 }
