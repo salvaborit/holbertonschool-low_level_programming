@@ -19,8 +19,8 @@ void print_diagsums(int *a, int size)
 		j = j + (size + 1);
 	}
 	i = 0;
-	j = 0;
-	while (i < size)
+	j = size - 1;
+	while (i < size - 1)
 	{
 		backSum = backSum + a[j];
 		i++;
