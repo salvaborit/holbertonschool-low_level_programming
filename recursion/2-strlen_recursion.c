@@ -1,10 +1,12 @@
-#include <stdio.h>
+#include "main.h"
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
+* _strlen_recursion - returns length of a string
+* @s: string to be checked
+* Return: length of string s
 */
-int main(void)
+int _strlen_recursion(char *s)
 {
-	return (0);
+	if (*s == '\0')
+		return (0);
+	return (1 + _strlen_recursion(s + 1));
 }
