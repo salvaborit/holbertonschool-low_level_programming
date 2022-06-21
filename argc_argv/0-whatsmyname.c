@@ -1,10 +1,9 @@
 #include <stdio.h>
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
+* whatsmyname - prints its name
+* @argv: array that stores arguments passed to command line
 */
-void main(int charc, char* argv[])
+void whatsmyname(char* argv[])
 {
 	printf("%s\n", argv[0]);
 }
