@@ -12,9 +12,12 @@ int main(int argc, char *argv[])
 	int i, j, sum;
 	/* checks if there are arguments */
 	if (argc == 1)
+	{
 		printf("0\n");
+		return (0);
+	}
 	/* checks if everything in argv are digits */
-	for (i = 0; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
 		for (j = 0; argv[i][j]; j++)
 		{
