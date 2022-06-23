@@ -9,7 +9,7 @@
 */
 char *_strdup(char *str)
 {
-	char *ar = malloc(strlen(str));
+	char *ar = malloc(strlen(str) + 1);
 	int i, len;
 
 	len = strlen(str);
