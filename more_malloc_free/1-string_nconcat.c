@@ -6,7 +6,7 @@
 * string_nconcat - concatenates s1 with n bytes of s2 + \0
 * @s1: string 1
 * @s2: string 2
-* @n: 
+* @n: number of bytes of s2 to copy
 * Return: pointer to new array containing s1 + n bytes of s2
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -19,7 +19,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		lenStr += strlen(s1);
 	if (strlen(s2) > 0)
 	{
-		if (n >= strlen(s2))
+		if (n > strlen(s2))
 			lenStr += strlen(s2);
 		else
 			lenStr += n;
@@ -30,10 +30,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	i = 0;
 	j = 0;
-	if (strlen(s1) > 0)
+	if (strlen(s1) > 0 && s1 != NULL)
 		for (; s1[i]; i++)
 			ar[i] = s1[i];
-	if (strlen(s2) > 0)
+	if (strlen(s2) > 0 && s2 != NULL)
 		for (; j < n; i++, j++)
 			ar[i] = s2[j];
 	ar[i] = '\0';
