@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
-* fromagrc - returns argc value
+* argstostr - turns arguments to CL into a string separated by \n
 * @ac: number of arguments passed to CL
 * @av: array of arguments passed to CL
 * Return: pointer to string
@@ -35,5 +35,4 @@ char *argstostr(int ac, char **av)
 	s++;
 	str[s] = '\0';
 	return (str);
-		
 }
