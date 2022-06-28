@@ -1,12 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+#include "dog.h"
 /**
-* main - Entry point
-* 
-* Return: 
+* print_dog - prints a struct dog
+* @d: pointer to struct dog
 */
-int main(void)
+void print_dog(struct dog *d)
 {
-	
+	char *nil = "(nil)";
+
+	printf("Name: %s\n", d->name ? d->name : nil);
+	printf("Age: %f\n", d->age);
+	printf("Owner: %s\n", d->owner ? d->owner : nil);
 }
