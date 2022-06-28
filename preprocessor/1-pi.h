@@ -1,12 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "main.h"
-/**
-* main - Entry point
-* 
-* Return: 
-*/
-int main(void)
-{
-	
-}
+#ifndef PI
+#define PI 3.14159265359
+#endif
