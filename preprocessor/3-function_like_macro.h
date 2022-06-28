@@ -1,12 +1,4 @@
-#include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
-/**
-* main - Entry point
-* 
-* Return: 
-*/
-int main(void)
-{
-	
-}
+#ifndef ABS
+#define ABS(x) abs(x)
+#endif
