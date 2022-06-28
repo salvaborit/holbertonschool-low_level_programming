@@ -10,12 +10,12 @@
 */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	if (name && age && owner)
+	if (name != NULL && age != NULL && owner != NULL)
 	{
 		d->name = name;
 		d->age = age;
 		d->owner = owner;		
 	}
 	else
-		printf("Ok");
+		printf("Ok\n");
 }
