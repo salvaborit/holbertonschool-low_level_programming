@@ -2,6 +2,7 @@
 #include <stdlib.h>
 /**
 * main - prints file from compilation
+* Return: 0 (success)
 */
 int main(void)
 {
