@@ -1,12 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 /**
-* main - Entry point
-* 
-* Return: 
+* main - prints file from compilation
 */
 int main(void)
 {
-	
+	printf(__FILE__"\n");
+	return (0);
 }
