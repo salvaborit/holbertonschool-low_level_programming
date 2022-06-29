@@ -11,36 +11,36 @@
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *dogg;
+	dog_t *bosco;
 	unsigned int i;
 	int nameLen, ownLen;
 
 	nameLen = strlen(name);
 	ownLen = strlen(owner);
-	dogg = malloc(sizeof(dog_t));
-	if (dogg == NULL)
+	bosco = malloc(sizeof(dog_t));
+	if (bosco == NULL)
 		return (NULL);
-	dogg->name = malloc(nameLen + 1);
-	if (dogg->name == NULL)
+	bosco->name = malloc(nameLen + 1);
+	if (bosco->name == NULL)
 	{
-		free(dogg);
-		free(dogg->name);
+		free(bosco);
+		free(bosco->name);
 		return (NULL);
 	}
-	dogg->owner = malloc(ownLen + 1);
-	if (dogg->owner == NULL)
+	bosco->owner = malloc(ownLen + 1);
+	if (bosco->owner == NULL)
 	{
-		free(dogg);
-		free(dogg->name);
-		free(dogg->owner);
+		free(bosco);
+		free(bosco->name);
+		free(bosco->owner);
 		return (NULL);
 	}
 	for (i = 0; i < strlen(name); i++)
-		dogg->name[i] = name[i];
-	dogg->name[i] = '\0';
-	dogg->age = age;
+		bosco->name[i] = name[i];
+	bosco->name[i] = '\0';
+	bosco->age = age;
 	for (i = 0; i < strlen(owner); i++)
-		dogg->owner[i] = owner[i];
-	dogg->owner[i] = '\0';
-	return (dogg);
+		bosco->owner[i] = owner[i];
+	bosco->owner[i] = '\0';
+	return (bosco);
 }
