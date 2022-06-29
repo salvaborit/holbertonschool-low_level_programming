@@ -2,13 +2,12 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
-* main - Entry point
-* 
-* Return: 
+* free_dog - frees memory in d
+* @d: pointer to memory allocated to a dog
 */
 void free_dog(dog_t *d)
 {
-	if (!d)
+	if (d == NULL)
 	{
 		free(d->owner);
 		free(d->name);
