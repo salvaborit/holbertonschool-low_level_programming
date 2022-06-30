@@ -3,8 +3,8 @@
 #include "3-calc.h"
 /**
 * get_op_func - pointer to func
-* 
-* Return: 
+* @s: operator
+* Return: func that takes 2 ints as parameters
 */
 int (*get_op_func(char *s))(int, int)
 {

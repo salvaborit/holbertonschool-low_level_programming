@@ -6,7 +6,6 @@
 * @argc: number of arguments passed to CL
 * @argv: array of arguments passed to CL
 * Return: result of operation
-* 3 MAX IFs
 */
 int main(int argc, char *argv[])
 {
