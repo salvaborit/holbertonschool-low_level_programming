@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit (98);
+		exit(98);
 	}
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	if (strlen(argv[2]) != 1 || f == NULL)
 	{
 		printf("Error\n");
-		exit (99);
+		exit(99);
 	}
 	printf("%d\n", f(a, b));
 	return (0);
