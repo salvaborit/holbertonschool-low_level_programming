@@ -8,24 +8,24 @@
 * Return: result of operation
 * 3 MAX IFs
 */
-int main(int argc; char *argv[])
+int main(int argc, char *argv[])
 {
 	int a, b;
-	char op;
+	int (*f)(int, int);
 
 	if (argc != 4)
 	{
-		printf("Error\n", )
+		printf("Error\n");
 		exit (98);
 	}
-	a = atoi(argv[2]);
-	b = atoi(argv[4]);
-	op = argv[3];
-	if (op != '+' && op != "-" && op != "*" && op != "/" && op != "%")
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+	f = get_op_func(argv[2]);
+	if (strlen(argv[2]) != 1 || f == NULL)
 	{
 		printf("Error\n");
 		exit (99);
 	}
-	printf("%d\n", get_op_func(op)(a, b));
-
+	printf("%d\n", f(a, b));
+	return (0);
 }

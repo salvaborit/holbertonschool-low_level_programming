@@ -6,7 +6,7 @@
 * 
 * Return: 
 */
-int (*get_op_func(char *s))(int a, int b)
+int (*get_op_func(char *s))(int, int)
 {
 	int i;
 	op_t ops[] = {
@@ -15,16 +15,15 @@ int (*get_op_func(char *s))(int a, int b)
         {"*", op_mul},
         {"/", op_div},
         {"%", op_mod},
-        {NULL, NULL};
+        {NULL, NULL}
+	};
 
 	i = 0;
-	while (ops.op[i])
+	while (ops[i].op)
 	{
-		if (ops.op[i] == s)
-		{
-			return (ops.f(a, b));
-		}
+		if (ops[i].op[0] == *s)
+			return (ops[i].f);
 		i++;
 	}
-	return (0);
+	return (NULL);
 }
