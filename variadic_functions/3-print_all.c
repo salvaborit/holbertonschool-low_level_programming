@@ -8,7 +8,7 @@ void print_all(const char * const format, ...)
 	va_list ap;
 	int i, cond, formatLen;
 
-	if (!format)
+	if (format == NULL)
 		return;
 	va_start(ap, format);
 	i = 0;
