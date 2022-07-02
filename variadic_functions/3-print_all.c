@@ -1,24 +1,15 @@
 #include "variadic_functions.h"
 /**
 * print_all - prints anything
-* @format - string (constant)
+* @format: string (constant)
 */
 void print_all(const char * const format, ...)
 {
 	va_list ap;
-	int i, n, cond, formatLen;
-	char c;
+	int i, cond, formatLen;
 
-	i = 0;
-	n = 0;
-	while (format[i])
-	{
-		c = format[i];
-		if (c == 'c' || c == 'i' || c == 'f' || c == 's')
-			n++;
-		i++;
-	}
-
+	if (!format)
+		return;
 	va_start(ap, format);
 	i = 0;
 	formatLen = strlen(format);
