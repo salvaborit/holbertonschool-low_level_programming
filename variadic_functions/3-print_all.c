@@ -12,7 +12,7 @@ void print_all(const char * const format, ...)
 	va_start(ap, format);
 	i = 0;
 	formatLen = strlen(format);
-	if (forimat != 0)
+	if (format != 0)
 	{
 		while (format[i])
 		{
