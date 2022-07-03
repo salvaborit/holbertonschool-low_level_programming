@@ -6,8 +6,5 @@ NAME = school
 all : main.c school.c m.h
 	$(CC) $? -o $(NAME)
 
-main.o : main.c m.h
-	$(CC) $? -o $(NAME)
-
-school.o : school.c m.h
+@(SRC).o : $(SRC).o
 	$(CC) $? -o $(NAME)
