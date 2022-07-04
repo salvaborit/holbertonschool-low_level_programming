@@ -10,7 +10,8 @@ void print_all(const char * const format, ...)
 	char *str;
 
 	i = 0;
-	formatLen = strlen(format);
+	if (format)
+		formatLen = strlen(format);
 	va_start(ap, format);
 	while (format && format[i])
 	{
