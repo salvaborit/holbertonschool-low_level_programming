@@ -10,6 +10,7 @@ int set_bit(unsigned long int *n, unsigned int index);
 int clear_bit(unsigned long int *n, unsigned int index);
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
 
+int _putchar(char c);
 unsigned int _pow(unsigned int num, int exp);
 
 #endif /* MAIN_H */
