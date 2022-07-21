@@ -41,5 +41,5 @@ int main(int ac, char *av[])
 	closeFdTo = close(fdTo);
 	if (closeFdFrom < 0 || closeFdTo < 0)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fdFrom), exit(100);
-	return(0);
+	return (0);
 }
