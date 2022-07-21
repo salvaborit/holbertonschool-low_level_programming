@@ -11,31 +11,21 @@ int main(int ac, char *av[])
 	char buf[1024];
 
 	if (ac != 3)
-	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
-	}
 	fdFrom = open(av[1], O_RDONLY);
 	if (fdFrom == -1)
-	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
-	}
 	fdTo = open(av[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	if (fdTo == -1)
-	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
-	}
 	while (readBytes == 1024)
 	{
 		readBytes = read(fdFrom, buf, 1024);
 		if (readBytes < 0)
-		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
-		}
 		writeBytes = write(fdTo, buf, readBytes);
 		if (writeBytes < 0)
-		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
-		}
 	}
 	closeFdFrom = close(fdFrom);
 	closeFdTo = close(fdTo);
