@@ -39,7 +39,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			slot->value = malloc(strlen(value) + 1);
 			if (slot->value == NULL)
 				return (0);
-			slot->value = strdup(value);
+			slot->value = strdup((char *)value);
 			return (1);
 		}
 
@@ -72,8 +72,8 @@ hash_node_t *ht_add(const char *key, const char *value)
 		return (NULL);
 	}
 
-	slot->key = strdup(key);
-	slot->value = strdup(value);
+	slot->key = strdup((char *)key);
+	slot->value = strdup((char *)value);
 	slot->next = NULL;
 	return (slot);
 }
