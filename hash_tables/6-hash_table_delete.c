@@ -29,17 +29,3 @@ void hash_table_delete(hash_table_t *ht)
 	free(ht->array);
 	free(ht);
 }
-
-/**
-* hash_node_t_len - returns the number of elements in a linked list
-* @h: head of linked list
-* Return: number of elements in linked list
-*/
-size_t hash_node_t_len(const hash_node_t *head)
-{
-	size_t i = 0;
-
-	for (i = 0; head; i++)
-		head = head->next;
-	return (i);
-}
