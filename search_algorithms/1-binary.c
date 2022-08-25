@@ -1,5 +1,6 @@
 #include "search_algos.h"
 
+
 /**
  * binary_search - searches an array for a value using the binary search algo
  * @array: pointer to the first element of the array to search in
@@ -9,21 +10,33 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
-	size_t i = 0, mid = 0;
+	size_t i = 0, leftLim = 0, rightLim = size - 1;
+	bool split = true;
 
 	if (!array || !size)
 		return (-1);
 
-	mid = size / 2;
-
-	if (value == array[mid])
-		return (mid);
-	else if (value < array[mid])
+	while (split && rightLim >= leftLim)
 	{
+		split = false;
 
-	}
-	else if (value > array[mid])
-	{
+		printf("Searching in array:");
+		for (i = leftLim; i <= rightLim; i++)
+		{
+			if (i > leftLim)
+				putchar(',');
+			printf(" %d", array[i]);
+		}
+		putchar(10);
 
+		i = leftLim + (rightLim - leftLim) / 2;
+		if (value < array[i])
+			rightLim = i - 1;
+		else if (value > array[i])
+			leftLim = i + 1;
+		else
+			return (i);
+		split = true;
 	}
+	return (-1);
 }
